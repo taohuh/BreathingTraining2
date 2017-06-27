@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/frameRecordBreath"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <com.taohuh.breathingtraining.view.CustomButton
+            android:id="@+id/btnStartRecord"
+            android:layout_margin="20dp"
+            android:layout_gravity="center_horizontal"
+            android:text="บันทึกเสียง"
+            style="@style/btn_color"/>
+        <com.taohuh.breathingtraining.view.CustomButton
+            android:id="@+id/btnCancelRecord"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="50dp"
+            android:text="ยกเลิก"
+            style="@style/btn_color"/>
+        <com.taohuh.breathingtraining.view.CustomButton
+            android:id="@+id/btnRestartRecord"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:text="เริ่มใหม่"
+            style="@style/btn_color"/>
+    </LinearLayout>
+
+</LinearLayout>

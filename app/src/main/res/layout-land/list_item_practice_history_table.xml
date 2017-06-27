@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F1EF">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:layout_gravity="center">
+        <com.taohuh.breathingtraining.view.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Date"
+            android:id="@+id/tvDate"
+            android:textColor="#000000"
+            android:background="#ffffff"
+            android:layout_marginLeft="8dp" />
+        <com.taohuh.breathingtraining.view.CustomTextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Level"
+            android:id="@+id/tvLevel"
+            android:textColor="#000000"
+            android:background="#ffffff"
+            android:paddingLeft="35dp" />
+
+        <com.taohuh.breathingtraining.view.CustomTextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="BPM_avg"
+            android:id="@+id/tvBPMAvg"
+            android:textColor="#000000"
+            android:background="#ffffff"
+            android:paddingLeft="21dp" />
+        <com.taohuh.breathingtraining.view.CustomTextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="BPM_min"
+            android:id="@+id/tvBPMMin"
+            android:textColor="#000000"
+            android:background="#ffffff"
+            android:paddingLeft="8dp" />
+        <com.taohuh.breathingtraining.view.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="BPM_max"
+            android:id="@+id/tvBPMMax"
+            android:textColor="#000000"
+            android:background="#ffffff"/>
+
+    </LinearLayout>
+</LinearLayout>

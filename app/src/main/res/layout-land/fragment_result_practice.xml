@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/colorHeadBar">
+        <com.taohuh.breathingtraining.view.CustomTextView
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_centerInParent="true"
+            android:layout_height="match_parent"
+            android:text="@string/result_practice_header"
+            android:textSize="@dimen/text_size_title"
+            android:textColor="#FFFFFF"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:id="@+id/imgHome"
+            android:src="@drawable/ichome"
+            android:paddingLeft="5dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:padding="0dp"
+        style="@style/btn_color"
+        android:orientation="vertical"
+        android:clickable="false"
+        android:layout_height="0dp"
+        android:layout_margin="30dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0.2"
+            android:layout_height="0dp">
+
+            <com.taohuh.breathingtraining.view.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="text"
+                android:textSize="12pt"
+                android:id="@+id/tvScore"
+                android:layout_gravity="center"
+                android:padding="5dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0.3"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="13pt"
+                    android:layout_height="13pt"
+                    android:id="@+id/imStar1"
+                    android:src="@drawable/icstar"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+                </ImageView>
+
+
+                <ImageView
+                    android:layout_width="13pt"
+                    android:layout_height="13pt"
+                    android:id="@+id/imStar2"
+                    android:src="@drawable/icstar"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="13pt"
+                    android:layout_height="13pt"
+                    android:id="@+id/imStar3"
+                    android:src="@drawable/icstar"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+                </ImageView>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <com.taohuh.breathingtraining.view.CustomButton
+            style="@style/btn_color"
+            android:text="@string/practice_again" />
+
+        <com.taohuh.breathingtraining.view.CustomButton
+            style="@style/btn_color"
+            android:text="@string/select_level_practice" />
+    </LinearLayout>
+
+
+</LinearLayout>

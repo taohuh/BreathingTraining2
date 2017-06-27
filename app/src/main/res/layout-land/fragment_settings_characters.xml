@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/colorHeadBar">
+        <com.taohuh.breathingtraining.view.CustomTextView
+            android:id="@+id/tvSetting"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_centerInParent="true"
+            android:layout_height="match_parent"
+            android:text="@string/setting_player"
+            android:textSize="@dimen/text_size_title"
+            android:textColor="#FFFFFF"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/close"
+            android:src="@drawable/back_btn"
+            android:background="@color/colorHeadBar"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:id="@+id/content">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:id="@+id/left">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/animate"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:id="@+id/right">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.08"
+                android:layout_height="0dp"
+                android:layout_gravity="center">
+                <com.taohuh.breathingtraining.view.CustomTextView
+                    android:id="@+id/txt_test_times"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:textSize="9pt"
+                    android:text="@string/setting_color_player"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/black" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"
+                android:layout_height="0dp">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="match_parent">
+                </FrameLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent">
+                    <com.taohuh.breathingtraining.view.CustomButton
+                        android:layout_width="match_parent"
+                        android:text="@string/player_pink"
+                        android:textSize="8pt"
+                        android:id="@+id/pink"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="20dp"
+                        style="@style/btn_color"/>
+                    <com.taohuh.breathingtraining.view.CustomButton
+                        android:layout_width="match_parent"
+                        android:text="@string/player_blue"
+                        android:textSize="8pt"
+                        android:id="@+id/blue"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="20dp"
+                        style="@style/btn_color"/>
+                    <com.taohuh.breathingtraining.view.CustomButton
+                        android:layout_width="match_parent"
+                        android:text="@string/player_green"
+                        android:textSize="8pt"
+                        android:id="@+id/green"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="20dp"
+                        style="@style/btn_color"/>
+                    <com.taohuh.breathingtraining.view.CustomButton
+                        android:layout_width="match_parent"
+                        android:text="@string/player_black"
+                        android:textSize="8pt"
+                        android:id="@+id/black"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="20dp"
+                        style="@style/btn_color"/>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="match_parent">
+                </FrameLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

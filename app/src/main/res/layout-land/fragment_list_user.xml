@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/colorHeadBar">
+        <com.taohuh.breathingtraining.view.CustomTextView
+            android:id="@+id/tvUserTitle"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_centerInParent="true"
+            android:layout_height="match_parent"
+            android:text="@string/list_user_title"
+            android:textSize="@dimen/text_size_title"
+            android:textColor="#FFFFFF"/>
+        <ImageButton
+            android:id="@+id/btnAddUser"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"
+            android:src="@android:drawable/ic_menu_add"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.taohuh.breathingtraining.view.CustomTextView
+            android:id="@+id/tvEmptyListUser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_margin="4dp"
+            android:textSize="@dimen/text_size_body"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@android:color/darker_gray"
+            android:layout_gravity="center_vertical"
+            android:text="@string/no_user_in_database"/>
+        <ListView
+            android:id="@+id/listUser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tvEmptyListUser"
+            android:divider="@android:drawable/divider_horizontal_bright"
+            android:dividerHeight="0.5dp"
+            android:listSelector="@android:drawable/list_selector_background"/>
+    </RelativeLayout>
+</LinearLayout>
